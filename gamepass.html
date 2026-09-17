@@ -1,0 +1,47 @@
+<!doctype html><html lang="th"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gamepass | NEKOJOM x NEXPLAY</title>
+<link rel="icon" href="favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body><header class="nav-wrap"><nav class="nav container">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="NEKOJOM x NEXPLAY"></a>
+<button class="menu-btn">☰</button><div class="nav-links"><a class="" href="index.html">หน้าแรก</a><a class="" href="robux.html">Robux</a><a class="active" href="gamepass.html">Gamepass</a><a href="maps.html">MAP</a><a class="" href="toycode.html">TOY CODE</a><a class="" href="giftcard.html">Gift Card</a><a href="admin.html">ADMIN</a><a class="nav-cta" href="contact.html">ติดต่อร้าน</a></div>
+</nav></header>
+
+<div class="store-status-bar">
+  <div class="container store-status-inner">
+    <div class="store-status-left">
+      <span class="store-status-dot" id="storeStatusDot"></span>
+      <strong id="storeStatusText">กำลังตรวจสอบสถานะร้าน...</strong>
+    </div>
+    <div class="store-status-time">
+      เวลาทำการ <b>10:00 - 02:00</b> (เวลาไทย)
+      <span class="store-clock" id="storeClock"></span>
+    </div>
+  </div>
+</div>
+
+<main><section class="page-head"><div class="container"><span class="kicker">ROBLOX SERVICE</span><h1>GAMEPASS</h1><p>เลือกบริการ Gamepass แล้วติดต่อแอดมินเพื่อเช็กราคาและคิวล่าสุด</p></div></section>
+<section class="section"><div class="container"><div class="gamepass-grid">
+<article class="gamepass-card"><div class="gamepass-icon">🎮</div><div class="gamepass-content"><span class="badge">GAMEPASS</span><h3>SULTAN</h3><p>Map Taamma</p><strong>สอบถามราคากับแอดมิน</strong></div><button class="btn btn-primary" data-gamepass="SULTAN • Map Taamma">สั่งซื้อ / สอบถาม</button></article>
+<article class="gamepass-card"><div class="gamepass-icon">👑</div><div class="gamepass-content"><span class="badge">GAMEPASS</span><h3>EMPEROR</h3><p>Map FINN</p><strong>สอบถามราคากับแอดมิน</strong></div><button class="btn btn-primary" data-gamepass="EMPEROR • Map FINN">สั่งซื้อ / สอบถาม</button></article>
+<article class="gamepass-card gamepass-card-wide"><div class="gamepass-icon">✨</div><div class="gamepass-content"><span class="badge">OTHER GAMEPASS</span><h3>Gamepass อื่น ๆ</h3><p>ส่งชื่อเกม / ชื่อ Gamepass หรือรูปให้แอดมินเช็กราคาได้</p></div><button class="btn btn-ghost" data-gamepass="Gamepass อื่น ๆ">ติดต่อแอดมิน</button></article>
+</div><div class="notice"><strong>Gamepass:</strong> กรุณาเช็กราคาก่อนชำระเงินทุกครั้ง</div></div></section></main>
+<div class="order-modal" id="orderModal">
+  <div class="order-modal-backdrop" data-close-modal></div>
+  <div class="order-modal-card">
+    <button class="order-modal-close" data-close-modal>×</button>
+    <span class="kicker">เลือกช่องทางสั่งซื้อ</span>
+    <h2 id="orderModalTitle">สั่งซื้อสินค้า</h2>
+    <div class="selected-pack"><span id="selectedLabel">รายการที่เลือก</span><strong id="selectedPackText"></strong></div>
+    <p class="modal-help">เลือกช่องทางที่สะดวกเพื่อทักแอดมิน</p>
+    <div class="modal-contact-grid">
+      <a class="modal-contact-btn" href="https://line.me/ti/p/~056yonzb" target="_blank"><span class="modal-icon">L</span><span><b>LINE</b><small>@056yonzb</small></span><em>เปิด</em></a>
+      <a class="modal-contact-btn" href="https://www.facebook.com/NEXPLAY.GAMESTORE" target="_blank"><span class="modal-icon">f</span><span><b>Facebook</b><small>NEXPLAY.GAMESTORE</small></span><em>เปิด</em></a>
+      <a class="modal-contact-btn" href="https://discord.gg/nexplaygamestore99" target="_blank"><span class="modal-icon">D</span><span><b>Discord</b><small>nexplaygamestore99</small></span><em>เปิด</em></a>
+      <a class="modal-contact-btn" href="https://www.instagram.com/nexplay_gamestore" target="_blank"><span class="modal-icon">◎</span><span><b>Instagram</b><small>nexplay_gamestore</small></span><em>เปิด</em></a>
+    </div>
+  </div>
+</div>
+<footer><div class="container footer-inner"><img src="assets/logo.png" alt=""><div><b>NEKOJOM × NEXPLAY GAMESTORE</b><p>PLAY MORE • SHOP SMART</p></div><span>© <span class="year"></span></span></div></footer><script src="script.js"></script></body></html>

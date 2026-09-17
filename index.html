@@ -1,0 +1,109 @@
+<!doctype html><html lang="th"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEKOJOM x NEXPLAY</title>
+<link rel="icon" href="favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body><header class="nav-wrap"><nav class="nav container">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="NEKOJOM x NEXPLAY"></a>
+<button class="menu-btn">☰</button><div class="nav-links"><a class="active" href="index.html">หน้าแรก</a><a class="" href="robux.html">Robux</a><a class="" href="gamepass.html">Gamepass</a><a class="" href="maps.html">MAP</a><a class="" href="toycode.html">TOY CODE</a><a class="" href="giftcard.html">Gift Card</a><a href="admin.html">ADMIN</a><a class="nav-cta" href="contact.html">ติดต่อร้าน</a></div>
+</nav></header>
+
+<div class="store-status-bar">
+  <div class="container store-status-inner">
+    <div class="store-status-left">
+      <span class="store-status-dot" id="storeStatusDot"></span>
+      <strong id="storeStatusText">กำลังตรวจสอบสถานะร้าน...</strong>
+    </div>
+    <div class="store-status-time">
+      เวลาทำการ <b>10:00 - 02:00</b> (เวลาไทย)
+      <span class="store-clock" id="storeClock"></span>
+    </div>
+  </div>
+</div>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy"><span class="eyebrow"><span class="pulse"></span> ราคาล่าสุดอัพเดทล่าสุดวันที่ 18/09</span>
+<h1>เติม <span>ROBux</span><br><b>NEKOJOM × NEXPLAY</b></h1>
+<p class="lead">เติมระบบ ID - PASS ใช้เวลาโดยประมาณไม่ถึง 5 นาที*</p>
+<div class="hero-actions"><a class="btn btn-primary" href="robux.html">ดูราคา Robux</a><a class="btn btn-ghost" href="gamepass.html">บริการ Gamepass</a></div>
+<div class="mini-features"><div><strong>⚡</strong><span>เติมไว<br><small>จัดคิวรวดเร็ว</small></span></div><div><strong>🎮</strong><span>หลายบริการ<br><small>Robux / Gamepass</small></span></div><div><strong>💬</strong><span>หลายช่องทาง<br><small>ติดต่อร้านง่าย</small></span></div></div>
+</div>
+<div class="hero-art"><div class="red-ring"></div><img class="mascot" src="assets/mascot.png" alt="Mascot"><div class="floating-chip chip-1">ID-PASS</div><div class="floating-chip chip-2">SPECIAL PACK</div></div>
+</div></section>
+<section class="section"><div class="container"><div class="section-head"><div><span class="kicker">SERVICES</span><h2>เลือกบริการ</h2></div><p>เว็บถูกแยกเป็นหน้า ๆ แล้ว กดเมนูเพื่อเข้าแต่ละบริการได้เลย</p></div>
+<div class="home-cards">
+<a class="home-card" href="robux.html"><div class="ico">💎</div><h3>Robux</h3><p>ดู SPECIAL PACK และเลือกแพ็กที่ต้องการ</p></a>
+<a class="home-card" href="gamepass.html"><div class="ico">🎮</div><h3>Gamepass</h3><p>SULTAN, EMPEROR และรายการอื่น ๆ</p></a>
+<a class="home-card" href="maps.html"><div class="ico">🗺️</div><h3>MAP</h3><p>รวมแมพ Roblox ของร้าน กดเข้าเกมได้ทันที</p></a>
+<a class="home-card" href="toycode.html"><div class="ico">🎁</div><h3>TOY CODE</h3><p>ดูตัวอย่างสินค้าและติดต่อเช็กสต็อก</p></a>
+<a class="home-card" href="giftcard.html"><div class="ico">💳</div><h3>Gift Card</h3><p>รายละเอียด Gift Card และช่องทางสอบถาม</p></a>
+</div></div></section></main><footer><div class="container footer-inner"><img src="assets/logo.png" alt=""><div><b>NEKOJOM × NEXPLAY GAMESTORE</b><p>PLAY MORE • SHOP SMART</p></div><span>© <span class="year"></span></span></div></footer>
+<!-- Music player: homepage only -->
+<div class="music-player-widget" id="musicPlayerWidget">
+  <button class="music-player-toggle" id="musicPlayerToggle" type="button" aria-label="เปิดเครื่องเล่นเพลง">♪</button>
+
+  <div class="music-player-panel">
+    <div class="music-player-head">
+      <div>
+        <span>NEKOJOM × NEXPLAY MUSIC</span>
+        <strong>Music Player</strong>
+      </div>
+      <button id="musicPlayerClose" type="button" aria-label="ย่อเครื่องเล่น">—</button>
+    </div>
+
+    <div class="music-now">
+      <img id="musicCover" src="assets/logo.png" alt="ปกเพลง">
+      <div class="music-now-info">
+        <span id="musicTrackNo">เพลง 01 / 07</span>
+        <strong id="musicTitle">Amor Na Praia (SLOWED + REVERB)</strong>
+        <small id="musicArtist">Felax</small>
+        <small id="musicState">พร้อมเล่น</small>
+      </div>
+    </div>
+
+    <div class="music-progress-wrap">
+      <input id="musicProgress" type="range" min="0" max="1000" value="0" aria-label="ตำแหน่งเพลง">
+      <div class="music-time-row">
+        <span id="musicCurrentTime">0:00</span>
+        <span id="musicDuration">0:00</span>
+      </div>
+    </div>
+
+    <div class="music-source-row">
+      <span>แหล่งเพลง</span>
+      <div class="music-source-switch">
+        <button type="button" id="musicSourceSC" class="active">SoundCloud</button>
+        <button type="button" id="musicSourceYT">YouTube</button>
+      </div>
+    </div>
+
+    <div class="music-player-controls">
+      <button id="musicPrev" type="button" aria-label="เพลงก่อนหน้า">⏮</button>
+      <button id="musicPlay" class="music-main-play" type="button" aria-label="เล่นเพลง">▶</button>
+      <button id="musicNext" type="button" aria-label="เพลงถัดไป">⏭</button>
+      <button id="musicMute" type="button" aria-label="เปิดปิดเสียง">🔊</button>
+      <input id="musicVolume" type="range" min="0" max="100" value="35" aria-label="ระดับเสียง">
+    </div>
+
+    <div class="music-mini-list" id="musicMiniList"></div>
+
+    <div class="music-player-footer">
+      <span id="musicMessage">กด ▶ เพื่อเริ่มเพลง</span>
+      <a id="musicOpenExternal" class="music-open-external" href="#" target="_blank" rel="noopener" style="display:none">เปิดใน SoundCloud ↗</a>
+      <a id="musicSourceLink" href="https://soundcloud.com/an1ps/amor-na-praia-super-slowed" target="_blank" rel="noopener">SoundCloud ↗</a>
+    </div>
+
+    <iframe id="scHost" class="yt-audio-player" aria-hidden="true"
+        title="SoundCloud player"
+        allow="autoplay"
+        scrolling="no"
+        frameborder="no"
+        src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fan1ps%2Famor-na-praia-super-slowed&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+    <div id="ytHost" class="yt-audio-player" aria-hidden="true"></div>
+  </div>
+</div>
+<script src="https://w.soundcloud.com/player/api.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script></body></html>
